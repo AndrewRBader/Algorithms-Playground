@@ -4,27 +4,27 @@ const router = express.Router();
 //////////////////////////// MIDDLEWARE ////////////////////////////////////
 
 router.get('/arrays-strings/', (req, res) => {
-    res.send('arrays and strings index page');
+    res.render('../views/topicIndexPages/arrayStringIndex.ejs');
 })
 
 router.get('/linked-lists/', (req, res) => {
-    res.send('linked list index page');
+    res.render('../views/topicIndexPages/linkedListIndex.ejs');
 })
 
 router.get('/trees-graphs/', (req, res) => {
-    res.send('trees and graphs index page');
+    res.render('../views/topicIndexPages/treesGraphsIndex.ejs');
 })
 
 router.get('/stacks-queues/', (req, res) => {
-    res.send('stacks and queues index page');
+    res.render('../views/topicIndexPages/stacksQueuesIndex.ejs');
 })
 
 router.get('/recursion/', (req, res) => {
-    res.send('recursion index page');
+    res.render('../views/topicIndexPages/recursionIndex.ejs');
 })
 
 router.get('/pathfinder-special/', (req, res) => {
-    res.send('pathfinder and special index page');
+    res.render('../views/topicIndexPages/pathfinderSpecialIndex.ejs');
 })
 
 module.exports = router;
