@@ -46,6 +46,10 @@ The user will be brought to an algo-prompt show page with a cool visualer at the
 ![alt algo-show-page](./WireFrames/AlgoShowPage.png)
 
 
+Will try some user auth as well!
+
+
+
 
 
 
