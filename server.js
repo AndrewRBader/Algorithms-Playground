@@ -1,10 +1,11 @@
 const express = require('express');
-const res = require('express/lib/response');
-
+const topicsController = require('./controllers/topics_controller')
 const app = express();
 
 ///////////////////////// MIDDLEWARE /////////////////////////////
 app.set('view engine', 'ejs');
+app.use('/', topicsController);
+
 
 app.get('/', (req, res) => {
     res.render('homepage.ejs');
