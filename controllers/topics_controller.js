@@ -1,8 +1,7 @@
 const express = require('express');
+const router = express.Router();
 
 //////////////////////////// MIDDLEWARE ////////////////////////////////////
-
-const router = express.Router();
 
 router.get('/arrays-strings/', (req, res) => {
     res.send('arrays and strings index page');
