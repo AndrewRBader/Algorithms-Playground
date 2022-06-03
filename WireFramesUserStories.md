@@ -26,7 +26,7 @@ The different categories I would like to consider adding to the Algorithm's Play
 6) pathfinder algorithms
     - cool search pathfinder algorithms
 
-ERD => will be many solutions and algorithms of a category to a visualization/algorithm-set-category ie multiple list algorthms visualized by a snake diagram component/function
+ERD => will be many solutions and algorithms of a category to an algorithm-set-category ie. There will be a one to many general visualizer method to many algorithms. ie multiple list algorithms visualized by a snake diagram component/function
 
 - solutions will be stored in a similar manner to my project 3, but I will have functional algorithms for each show page as well that runs the visualizer
 
