@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-//////////////////////////// MIDDLEWARE ////////////////////////////////////
-
 router.get('/arrays-strings/', (req, res) => {
     res.render('../views/topicIndexPages/arrayStringIndex.ejs');
 })
