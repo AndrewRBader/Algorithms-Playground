@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/arrays-strings/', (req, res) => {
-    res.render('../views/topicIndexPages/arrayStringIndex.ejs');
+    res.render('../views/topicIndexPages/arraysStringsIndex.ejs');
 })
 
 router.get('/linked-lists/', (req, res) => {
