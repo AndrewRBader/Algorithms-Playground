@@ -7,6 +7,7 @@ PORT = process.env.PORT;
 ///////////////////////// MIDDLEWARE /////////////////////////////
 app.set('view engine', 'ejs');
 app.use('/', topicsController);
+app.use(express.static('public'));
 
 
 app.get('/', (req, res) => {

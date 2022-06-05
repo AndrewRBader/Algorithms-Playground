@@ -1,0 +1,41 @@
+/* main html styles */
+body {
+    border-style: solid;
+    min-height: 500px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+/* arrays and strings index page styles */
+.array-strings-index{
+    background-color: rgb(240, 255, 241);
+}
+
+/* linked lists index page styles */
+.linked-lists-index{
+    background-color: rgb(255, 253, 240);
+}
+
+/* pathfinder special algorithms index page styles */
+.pathfider-special-index{
+    background-color: rgb(240, 255, 247);
+}
+
+/* recursion algorithms index page styles */
+.recursion-index{
+    background-color: rgb(138, 187, 40);
+}
+
+/* stacks and queues index page styles */
+.stacks-queues-index{
+    background-color: rgb(255, 252, 240);
+}
+
+/* trees and graphs index page styles */
+.trees-graphs-index{
+    background-color: azure;
+}
+
+
+
