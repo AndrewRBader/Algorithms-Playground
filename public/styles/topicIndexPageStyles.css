@@ -19,7 +19,7 @@ body {
 }
 
 .prompts-container {
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     border-style: solid;
