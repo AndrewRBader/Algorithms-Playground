@@ -1,5 +1,5 @@
 
 module.exports = {
     topics: require('./topics_controller'),
-    arraysStrings: require('./arraysStringsController')
+    arraysStrings: require('./subControllers/arraysStringsController')
 }
