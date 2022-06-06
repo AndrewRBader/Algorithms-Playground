@@ -8,7 +8,7 @@ body {
     border-style: solid;
 }
 
-.title{
+.title {
     text-align: center;
     border-style: solid;
     background-color: lightgoldenrodyellow;
@@ -18,7 +18,7 @@ body {
     margin-top: 0px;
 }
 
-.prompts-container{
+.prompts-container {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -57,39 +57,36 @@ button {
 }
 
 /* linked lists index page styles */
-.linked-lists-index{
+.linked-lists-index {
     width: 100%;
     height: 100%;
     background-color: rgb(255, 253, 240);
 }
 
 /* pathfinder special algorithms index page styles */
-.pathfider-special-index{
+.pathfider-special-index {
     width: 100%;
     height: 100%;
     background-color: rgb(240, 255, 247);
 }
 
 /* recursion algorithms index page styles */
-.recursion-index{
+.recursion-index {
     width: 100%;
     height: 100%;
     background-color: rgb(194, 212, 160);
 }
 
 /* stacks and queues index page styles */
-.stacks-queues-index{
+.stacks-queues-index {
     width: 100%;
     height: 100%;
     background-color: rgb(255, 252, 240);
 }
 
 /* trees and graphs index page styles */
-.trees-graphs-index{
+.trees-graphs-index {
     width: 100%;
     height: 100%;
     background-color: azure;
 }
-
-
-
