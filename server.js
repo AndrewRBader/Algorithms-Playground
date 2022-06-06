@@ -7,6 +7,7 @@ PORT = process.env.PORT;
 ///////////////////////// CONTROLLERS ////////////////////////////
 app.use('/', controllers.topics);
 app.use('/arrays-strings/', controllers.arraysStrings);
+app.use('/linked-lists/', controllers.linkedLists);
 
 ///////////////////////// MIDDLEWARE /////////////////////////////
 app.set('view engine', 'ejs');

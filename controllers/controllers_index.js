@@ -1,5 +1,7 @@
 
 module.exports = {
     topics: require('./topics_controller'),
-    arraysStrings: require('./subControllers/arraysStringsController')
+    // subtopic controllers imported here
+    arraysStrings: require('./subControllers/arraysStringsController'),
+    linkedLists: require('./subControllers/linkedListsController')
 }
