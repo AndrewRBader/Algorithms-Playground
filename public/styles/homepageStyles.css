@@ -24,11 +24,13 @@
     font-size: 20px;
 }
 
-.index-link-buttons-container{
+.index-link-buttons{
     display:flex;
     border-style: solid;
     margin:auto;
     margin-top:5px;
+    padding-top:2px;
+    padding-bottom:2px;
     width:90%;
     min-height: 600px;
     justify-content: center;
