@@ -9,6 +9,7 @@ app.use('/', controllers.topics);
 app.use('/arrays-strings/', controllers.arraysStrings);
 app.use('/linked-lists/', controllers.linkedLists);
 app.use('/pathfinder-special/', controllers.pathfinderSpecial);
+app.use('/recursion/', controllers.recursion);
 
 ///////////////////////// MIDDLEWARE /////////////////////////////
 app.set('view engine', 'ejs');

@@ -4,5 +4,6 @@ module.exports = {
     // subtopic controllers imported here
     arraysStrings: require('./subControllers/arraysStringsController'),
     linkedLists: require('./subControllers/linkedListsController'),
-    pathfinderSpecial: require('./subControllers/pathfinderSpecialController')
+    pathfinderSpecial: require('./subControllers/pathfinderSpecialController'),
+    recursion: require('./subControllers/recursionController')
 }
