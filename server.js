@@ -8,6 +8,7 @@ PORT = process.env.PORT;
 app.use('/', controllers.topics);
 app.use('/arrays-strings/', controllers.arraysStrings);
 app.use('/linked-lists/', controllers.linkedLists);
+app.use('/pathfinder-special/', controllers.pathfinderSpecial);
 
 ///////////////////////// MIDDLEWARE /////////////////////////////
 app.set('view engine', 'ejs');
