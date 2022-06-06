@@ -7,5 +7,5 @@ module.exports = {
     treesGraphs: require('./subControllers/treesGraphsController'),
     stacksQueues: require('./subControllers/stacksQueuesController'),
     recursion: require('./subControllers/recursionController'),
-    pathfinderSpecial: require('./subControllers/pathfinderSpecialController'),
+    otherAlgorithms: require('./subControllers/otherAlgorithmsController'),
 }

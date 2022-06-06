@@ -21,8 +21,8 @@ router.get('/recursion/', (req, res) => {
     res.render('../views/topicIndexPages/recursionIndex.ejs');
 })
 
-router.get('/pathfinder-special/', (req, res) => {
-    res.render('../views/topicIndexPages/pathfinderSpecialIndex.ejs');
+router.get('/other-algorithms/', (req, res) => {
+    res.render('../views/topicIndexPages/otherAlgorithmsIndex.ejs');
 })
 
 module.exports = router;
