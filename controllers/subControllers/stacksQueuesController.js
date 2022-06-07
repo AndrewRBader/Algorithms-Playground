@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/prompt1/', (req, res) => {
-    res.send('stacks and queues prompt 1 show page');
+    res.render('../views/AlgorithmPromptShowPages/stacksQueuesPromptsPages/prompt1_stacksQueues.ejs');
 })
 
 module.exports = router;
