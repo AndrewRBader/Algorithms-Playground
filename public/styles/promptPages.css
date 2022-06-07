@@ -1,6 +1,26 @@
 /* styles for the prompt show pages */
 
-body {
-    background-color: blue;
+.prompt {
+    border-style: solid;
+    height: 800px;
 }
 
+.arrays-strings{
+    background-color: aqua;
+}
+
+.header{
+    border-style: solid;
+    width: 99%;
+    margin: auto;
+    margin-top: 5px;
+    height: 20%;
+}
+
+.work-space{
+    border-style: solid;
+    width: 99%;
+    margin: auto;
+    margin-top: 5px;
+    height: 75%;
+}
