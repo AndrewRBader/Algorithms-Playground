@@ -1,16 +1,31 @@
-/* main html styles */
+/* topic index page styles */
+
 body {
+    background-color: lightgray;
     margin: auto;
     margin-top: 10px;
     width: 80%;
     height: 80%;
-    padding: 10px;
     border-style: solid;
+}
+
+main {
+    width:100%;
+    height:100%;
+    margin:auto;
+    padding-bottom:5px;
+}
+
+.links {
+    padding-left: 2px;
+    padding-top: 1px;
 }
 
 .title {
     text-align: center;
     border-style: solid;
+    width: 99%;
+    margin: auto;
     background-color: lightgoldenrodyellow;
     font-size: 30px;
     padding-bottom: 10px;
@@ -47,46 +62,49 @@ button {
     width: 100%;
     height: 100%;
     border-style: solid; 
+    overflow-wrap: break-word;
+    overflow: scroll;
+    font-size: 30px;
 }
 
 /* arrays and strings index page styles */
 .array-strings-index {
     width: 100%;
     height: 100%;
-    background-color: rgb(240, 255, 241);
+    background-color: aqua;
 }
 
 /* linked lists index page styles */
 .linked-lists-index {
     width: 100%;
     height: 100%;
-    background-color: rgb(255, 253, 240);
+    background-color: greenyellow;
 }
 
 /* pathfinder special algorithms index page styles */
 .other-algorithms-index {
     width: 100%;
     height: 100%;
-    background-color: rgb(240, 255, 247);
+    background-color: rgb(255, 47, 206);
 }
 
 /* recursion algorithms index page styles */
 .recursion-index {
     width: 100%;
     height: 100%;
-    background-color: rgb(194, 212, 160);
+    background-color: rgb(47, 255, 47);
 }
 
 /* stacks and queues index page styles */
 .stacks-queues-index {
     width: 100%;
     height: 100%;
-    background-color: rgb(255, 252, 240);
+    background-color: rgb(255, 47, 61);
 }
 
 /* trees and graphs index page styles */
 .trees-graphs-index {
     width: 100%;
     height: 100%;
-    background-color: azure;
+    background-color: rgb(154, 83, 221);
 }
