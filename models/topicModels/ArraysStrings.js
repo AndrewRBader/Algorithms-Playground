@@ -9,6 +9,14 @@ const arraysStringsSchema = new mongoose.Schema({
         type: String,
         required:[true, 'input topic']
     },
+    file_grabber: {
+        type: String,
+        required:[true, 'input title']
+    },
+    dir_grabber: {
+        type: String,
+        required:[true, 'input topic']
+    },
     description: {
         type: String,
         required:[true, 'input prompt']

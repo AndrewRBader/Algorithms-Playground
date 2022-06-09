@@ -8,8 +8,10 @@ const db = require('../../models/modelsIndex.js')
 
 db.ArraysStringsAlgorithm.create(
     {
-        title: 'Duplicate_Check',
-        topic: 'arrays_strings',
+        title: 'Duplicate Check',
+        topic: 'Arrays',
+        file_grabber: 'duplicate_check',
+        dir_grabber: 'arrays_strings',
         description: 'implement algorithm determine if string has all unique characters. Complexities: O(N) time and O(N) space',
         solution: [
             'function duplicateCheck(str){',

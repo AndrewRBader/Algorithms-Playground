@@ -1,3 +1,3 @@
 module.exports = {
-    ArraysStringsAlgorithm : require('./ArraysStrings.js')
+    ArraysStringsAlgorithm : require('./topicModels/ArraysStrings.js')
 }

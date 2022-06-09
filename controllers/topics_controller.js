@@ -1,9 +1,21 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/arrays-strings/', (req, res) => {
-    res.render('../views/topicIndexPages/arraysStringsIndex.ejs');
-})
+///////////////////////// MODELS /////////////////////////////////
+const db = require('../models/modelsIndex.js')
+
+///////////////////////// ROUTES /////////////////////////////////
+router.get('/arrays-strings/', async(req, res, next) => {
+    try {
+        const arrays_strings = await db.ArraysStringsAlgorithm.find({});
+        const context = {arrays_strings};
+        return res.render('../views/topicIndexPages/arraysStringsIndex.ejs', context);
+    } catch (error) {
+        console.log(error);
+        req.error = error;
+        return next();
+    }
+});
 
 router.get('/linked-lists/', (req, res) => {
     res.render('../views/topicIndexPages/linkedListIndex.ejs');

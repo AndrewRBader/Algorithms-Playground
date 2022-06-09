@@ -14,11 +14,15 @@
         <section class = "prompts-container">
 
             <div class = "prompt-container">
-                <a class="prompt-link" href = "/arrays-strings/prompt1/">
-                    <button>
-                        Prompt 1
-                    </button>
-                </a>
+                
+                <% for (let i = 0; i < arrays_strings.length; i++){ %>
+                    <a class="prompt-link" href = "/arrays-strings/<%=arrays_strings[i]._id%>/">
+                        <button>
+                            <%= arrays_strings[i].title %>
+                        </button>
+                    </a>
+                <% } %>
+
             </div>
 
         </section>
