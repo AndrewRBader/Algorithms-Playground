@@ -29,13 +29,29 @@ router.get('/linked-lists/', async (req, res, next) => {
     }
 });
 
-router.get('/trees-graphs/', (req, res) => {
-    res.render('../views/topicIndexPages/treesGraphsIndex.ejs');
-})
+router.get('/trees-graphs/', async(req, res, next) => {
+    try {
+        const trees_graphs = await db.TreesGraphsAlgorithm.find({});
+        const context = {trees_graphs};
+        return res.render('../views/topicIndexPages/treesGraphsIndex.ejs', context);
+    } catch (error) {
+        console.log(error);
+        req.error = error;
+        return next();
+    }
+});
 
-router.get('/stacks-queues/', (req, res) => {
-    res.render('../views/topicIndexPages/stacksQueuesIndex.ejs');
-})
+router.get('/stacks-queues/', async (req, res, next) => {
+    try {
+        const stacks_queues = await db.StacksQueuesAlgorithm.find({});
+        const context = {stacks_queues};
+        return res.render('../views/topicIndexPages/stacksQueuesIndex.ejs', context);
+    } catch (error) {
+        console.log(error);
+        req.error = error;
+        return next();
+    }
+});
 
 router.get('/recursion/', async (req, res, next) => {
     try {

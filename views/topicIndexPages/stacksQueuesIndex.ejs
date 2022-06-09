@@ -12,15 +12,17 @@
         <div class = "links"><a href = "/">Homepage</a></div>
         <div class = "title">Stacks and Queues Index Page</div>
         <section class = "prompts-container">
-
             <div class = "prompt-container">
-                <a class="prompt-link" href = "/stacks-queues/prompt1/">
-                    <button>
-                        Prompt 1
-                    </button>
-                </a>
-            </div>
 
+                <% for (let i = 0; i < stacks_queues.length; i++){ %>
+                    <a class="prompt-link" href = "/stacks-queues/<%=stacks_queues[i]._id%>/">
+                        <button>
+                            <%= stacks_queues[i].title %>
+                        </button>
+                    </a>
+                <% } %>
+                
+            </div>
         </section>
     </main>
 </body>
