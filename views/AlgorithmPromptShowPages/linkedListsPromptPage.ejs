@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linked Lists Prompt 1</title>
     <link rel = "stylesheet" href = "/styles/promptPages.css">
+    <!-- import script for code like text in solution component rendered on prompt show page-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class = "prompt linked-lists">
@@ -23,7 +27,13 @@
         </section>
         <section class = "work-space">
             <span class = "visualizer-span"> Visualizer Area </span>
-            <span class = "code-block-span"> Code Block Div </span>
+            <span class = "code-block-span">
+                <% for (let i = 0; i < linkedListsAlgorithm.solution.length; i++){ %>
+                    <div class = "scriptLines"> 
+                        <%= linkedListsAlgorithm.solution[i] %>
+                    </div>    
+                <% } %> 
+            </span>
         </section>
     </main>
 </body>

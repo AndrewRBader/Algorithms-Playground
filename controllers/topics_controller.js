@@ -17,9 +17,17 @@ router.get('/arrays-strings/', async(req, res, next) => {
     }
 });
 
-router.get('/linked-lists/', (req, res) => {
-    res.render('../views/topicIndexPages/linkedListIndex.ejs');
-})
+router.get('/linked-lists/', async (req, res, next) => {
+    try {
+        const linked_lists = await db.LinkedListsAlgorithm.find({});
+        const context = {linked_lists};
+        return res.render('../views/topicIndexPages/linkedListIndex.ejs', context);
+    } catch (error) {
+        console.log(error);
+        req.error = error;
+        return next();
+    }
+});
 
 router.get('/trees-graphs/', (req, res) => {
     res.render('../views/topicIndexPages/treesGraphsIndex.ejs');
