@@ -37,12 +37,28 @@ router.get('/stacks-queues/', (req, res) => {
     res.render('../views/topicIndexPages/stacksQueuesIndex.ejs');
 })
 
-router.get('/recursion/', (req, res) => {
-    res.render('../views/topicIndexPages/recursionIndex.ejs');
-})
+router.get('/recursion/', async (req, res, next) => {
+    try {
+        const recursion = await db.RecursionAlgorithm.find({});
+        const context = {recursion};
+        return res.render('../views/topicIndexPages/recursionIndex.ejs', context);
+    } catch (error) {
+        console.log(error);
+        req.error = error;
+        return next();
+    }
+});
 
-router.get('/other-algorithms/', (req, res) => {
-    res.render('../views/topicIndexPages/otherAlgorithmsIndex.ejs');
-})
+router.get('/other-algorithms/', async(req, res, next) => {
+    try {
+        const other_algorithms = await db.OtherAlgorithm.find({});
+        const context = {other_algorithms};
+        return res.render('../views/topicIndexPages/otherAlgorithmsIndex.ejs', context);
+    } catch (error) {
+        console.log(error);
+        req.error = error;
+        return next();
+    }
+});
 
 module.exports = router;

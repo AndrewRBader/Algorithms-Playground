@@ -16,14 +16,22 @@
                 <span><a href = "/recursion/">Recursion Algorithms Index</a></span>
             </div>
             <div class = "title-topic-description-container">
-                <div class = "title"> Prompt 1 for Recursion Algorithms </div>
-                <div class = "topic"> Topic </div>
-                <div class = "description"> Short Description </div>
+                <div class = "title"> <%= recursionAlgorithm.title %> </div>
+                <div class = "topic"> <%= recursionAlgorithm.topic %> </div>
+                <div class = "description"> <%= recursionAlgorithm.description %> </div>
             </div>
         </section>
         <section class = "work-space">
             <span class = "visualizer-span"> Visualizer Area </span>
-            <span class = "code-block-span"> Code Block Div </span>
+            <span class = "code-block-span">
+                
+                <% for (let i = 0; i < recursionAlgorithm.solution.length; i++){ %>
+                    <div class = "scriptLines"> 
+                        <%= recursionAlgorithm.solution[i] %>
+                    </div>    
+                <% } %> 
+
+            </span>
         </section>
     </main>
 </body>

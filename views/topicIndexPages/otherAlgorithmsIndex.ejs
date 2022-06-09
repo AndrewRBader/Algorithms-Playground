@@ -14,11 +14,13 @@
         <section class = "prompts-container">
 
             <div class = "prompt-container">
-                <a class="prompt-link" href = "/other-algorithms/prompt1">
-                    <button>
-                        Prompt 1
-                    </button>
-                </a>
+                <% for (let i = 0; i < other_algorithms.length; i++){ %>
+                    <a class="prompt-link" href = "/other-algorithms/<%=other_algorithms[i]._id%>/">
+                        <button>
+                            <%= other_algorithms[i].title %>
+                        </button>
+                    </a>
+                <% } %>
             </div>
 
         </section>

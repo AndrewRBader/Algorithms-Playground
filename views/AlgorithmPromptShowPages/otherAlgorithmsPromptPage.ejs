@@ -16,14 +16,22 @@
                 <span><a href = "/other-algorithms/">Other Algorithms Index</a></span>
             </div>
             <div class = "title-topic-description-container">
-                <div class = "title"> Prompt 1 for Other Algorithms </div>
-                <div class = "topic"> Topic </div>
-                <div class = "description"> Short Description </div>
+                <div class = "title"> <%= otherAlgorithm.title %> </div>
+                <div class = "topic"> <%= otherAlgorithm.topic %> </div>
+                <div class = "description"> <%= otherAlgorithm.description %> </div>
             </div>
         </section>
         <section class = "work-space">
             <span class = "visualizer-span"> Visualizer Area </span>
-            <span class = "code-block-span"> Code Block Div </span>
+            <span class = "code-block-span">
+
+                <% for (let i = 0; i < otherAlgorithm.solution.length; i++){ %>
+                    <div class = "scriptLines"> 
+                        <%= otherAlgorithm.solution[i] %>
+                    </div>    
+                <% } %> 
+
+            </span>
         </section>
     </main>
 </body>
