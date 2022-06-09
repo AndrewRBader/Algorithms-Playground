@@ -4,6 +4,7 @@ const router = express.Router();
 ///////////////////////// MODELS /////////////////////////////////
 const db = require('../../models/modelsIndex.js')
 
+///////////////////////// ROUTES /////////////////////////////////
 router.get('/:id/', async (req, res, next) => {
     try{
         const otherAlgorithm = await db.OtherAlgorithm.findById(req.params.id);

@@ -1,12 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/prompt1/', (req, res) => {
-    res.render('../views/AlgorithmPromptShowPages/linkedListPromptsPages/prompt1_linkedLists.ejs');
-})
-
-module.exports = router;
-
 ///////////////////////// MODELS /////////////////////////////////
 const db = require('../../models/modelsIndex.js')
 
@@ -22,3 +16,5 @@ router.get('/:id/', async(req, res, next) => {
         return next();
     }
 })
+
+module.exports = router;

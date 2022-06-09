@@ -16,14 +16,20 @@
                 <span><a href = "/trees-graphs/">Trees and Graphs Index</a></span>
             </div>
             <div class = "title-topic-description-container">
-                <div class = "title"> Prompt 1 for Trees and Graphs </div>
-                <div class = "topic"> Topic </div>
-                <div class = "description"> Short Description </div>
+                <div class = "title"> <%= treesGraphsAlgorithm.title %> </div>
+                <div class = "topic"> <%= treesGraphsAlgorithm.topic %> </div>
+                <div class = "description"> <%= treesGraphsAlgorithm.description %> </div>
             </div>
         </section>
         <section class = "work-space">
             <span class = "visualizer-span"> Visualizer Area </span>
-            <span class = "code-block-span"> Code Block Div </span>
+            <span class = "code-block-span">
+                <% for (let i = 0; i < treesGraphsAlgorithm.solution.length; i++){ %>
+                    <div class = "scriptLines"> 
+                        <%= treesGraphsAlgorithm.solution[i] %>
+                    </div>    
+                <% } %>
+            </span>
         </section>
     </main>
 </body>

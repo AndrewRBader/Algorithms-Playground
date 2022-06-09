@@ -16,14 +16,20 @@
                 <span><a href = "/stacks-queues/">Stacks and Queues Index</a></span>
             </div>
             <div class = "title-topic-description-container">
-                <div class = "title"> Prompt 1 for Stacks and Queues </div>
-                <div class = "topic"> Topic </div>
-                <div class = "description"> Short Description </div>
+                <div class = "title"> <%= stacksQueuesAlgorithm.title %> </div>
+                <div class = "topic"> <%= stacksQueuesAlgorithm.topic %> </div>
+                <div class = "description"> <%= stacksQueuesAlgorithm.description %> </div>
             </div>
         </section>
         <section class = "work-space">
             <span class = "visualizer-span"> Visualizer Area </span>
-            <span class = "code-block-span"> Code Block Div </span>
+            <span class = "code-block-span">
+                <% for (let i = 0; i < stacksQueuesAlgorithm.solution.length; i++){ %>
+                    <div class = "scriptLines"> 
+                        <%= stacksQueuesAlgorithm.solution[i] %>
+                    </div>    
+                <% } %>
+            </span>
         </section>
     </main>
 </body>

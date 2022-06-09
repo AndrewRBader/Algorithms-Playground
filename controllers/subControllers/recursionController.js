@@ -4,6 +4,7 @@ const router = express.Router();
 ///////////////////////// MODELS /////////////////////////////////
 const db = require('../../models/modelsIndex.js')
 
+///////////////////////// ROUTES /////////////////////////////////
 router.get('/:id/', async (req, res, next) => {
     try{
         const recursionAlgorithm = await db.RecursionAlgorithm.findById(req.params.id);
@@ -13,7 +14,7 @@ router.get('/:id/', async (req, res, next) => {
         console.log(error);
         req.error = error;
         return next();
-}
+    }
 })
 
 module.exports = router;
