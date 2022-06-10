@@ -22,9 +22,10 @@ Installation steps:
 Link to User Stories/WireFrame/ERD file:
 https://github.com/AndrewRBader/Algorithms-Playground/blob/main/WireFrames/WireFramesUserStories.md
 
-Important Notes, Future Directions
+Important Notes, Bugs, Future Directions
 - this app is currently in an MVP state where all the basic functionalities are working
-- The canvas jquery feature is working with no bugs, and will be adding relevant scripts to the prompt library shortly, currently there is a simple canvas jquery place holder to show functionality of the linked scripts but no actual visualizer scripts yet
+- The canvas jquery feature is semi working, and will be adding relevant scripts to the prompt library shortly, currently there is a simple canvas jquery place holder to show functionality of the linked scripts but no actual visualizer scripts yet
+- one canvas bug is that the image doesn't always show, sometimes need to hit the reset button first then run to show the canvas image
 
 
 
