@@ -26,7 +26,7 @@ Important Notes, Bugs, Future Directions
 - this app is currently in an MVP state where all the basic functionalities are working
 - The canvas jquery feature is semi working, and will be adding relevant scripts to the prompt library shortly, currently there is a simple canvas jquery place holder to show functionality of the linked scripts but no actual visualizer scripts yet
 - one canvas bug is that the image doesn't always show, sometimes need to hit the reset button first then run to show the canvas image
-
+- second canvas but is that it doesn't reset the drawing "thickness" when the image is reset. Tried to fix with conditionals but still doesn't work exactly right yet
 
 
 
