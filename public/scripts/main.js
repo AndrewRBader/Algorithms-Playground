@@ -72,7 +72,7 @@ $('#hide-solution-button').click(() => {
 function replaceDash(scriptLines){
     for (let i = 0; i < scriptLines.length; i++){
         let scriptLineTemp = scriptLines[i].innerHTML
-        let newStr = scriptLineTemp.replaceAll('-', '&nbsp')
+        let newStr = scriptLineTemp.replaceAll('---', '&nbsp&nbsp&nbsp')
 
         scriptLines[i].innerHTML = `${i}` + newStr
     }
