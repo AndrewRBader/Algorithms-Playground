@@ -7,7 +7,7 @@ Heroku site: https://algorithms-playground-bader.herokuapp.com/
 
 Next up:
 
-DOM manipulation to implement the visual interpretations of algorithms
+Set up general DOM visualizer element
 
 
 
