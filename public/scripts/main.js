@@ -16,9 +16,13 @@ var visCanvasStyle = {
     "margin": "auto",
 }
 
+let visualizerClickCheck = false;
+
 $('#visualizer-button').click(() => {
+
     $visualizerTitle.appendTo('.visualizer-area')
     $visualizerCanvas.appendTo('.visualizer-area')
+
 
     return function() {
         $visualizerTitle.css(visTitleStyle)
@@ -27,8 +31,9 @@ $('#visualizer-button').click(() => {
         return function() {
             var c = document.getElementById('myCanvas');
             var ctx = c.getContext("2d");
+            if (visualizerClickCheck === true) return;
+            visualizerClickCheck = true;
             return algoCanvasFunction(c, ctx);
-
         }();
     }();
 })
@@ -36,6 +41,7 @@ $('#visualizer-button').click(() => {
 $('#reset-button').click(() => {
     $visualizerTitle.remove();
     $visualizerCanvas.remove();
+    return visualizerClickCheck = true;
 })
 
 // solution button functionality
@@ -43,28 +49,40 @@ $('#reset-button').click(() => {
 const $scriptLines = $('.scriptLines')
 var scriptLines = document.querySelectorAll('.scriptLines')
 
-
+let solutionClickCheck = false;
 
 $('#show-solution-button').click(() => {
+    if (solutionClickCheck === true) return;
+
     replaceDash(scriptLines)
     return function (){
         $scriptLines.css("color","green")
+        solutionClickCheck = true;
     }()
 })
 
 $('#hide-solution-button').click(() => {
+    unshiftNumber(scriptLines)
     return function (){
         $scriptLines.css("color","black")
+        solutionClickCheck = false;
     }()
 })
 
 function replaceDash(scriptLines){
     for (let i = 0; i < scriptLines.length; i++){
         let scriptLineTemp = scriptLines[i].innerHTML
-        let newStrArr = scriptLineTemp.replaceAll('-', '&nbsp')
-        let newStr = `${i})` + newStrArr
+        let newStr = scriptLineTemp.replaceAll('-', '&nbsp')
+
+        scriptLines[i].innerHTML = `${i}` + newStr
+    }
+}
+
+function unshiftNumber(scriptLines){
+    for (let i = 0; i < scriptLines.length; i++){
+        let scriptLineTemp = scriptLines[i].innerHTML
+        let newStr = scriptLineTemp.replace(`${i}`, '')
 
         scriptLines[i].innerHTML = newStr
-        console.log(scriptLines[i])
     }
 }

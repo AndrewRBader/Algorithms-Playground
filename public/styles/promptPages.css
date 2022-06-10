@@ -135,7 +135,6 @@ button {
     color: black;
     border-color: grey;
     max-height: 100%;
-    overflow-wrap: break-word;
     overflow:scroll;
 }
 
