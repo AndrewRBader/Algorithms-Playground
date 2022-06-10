@@ -5,9 +5,9 @@ Heroku site: https://algorithms-playground-bader.herokuapp.com/
 - going to use DOM manipulation to implement the algorithms
 
 
-Next up:
+MVP achieved,
 
-Set up general DOM visualizer element
+now working on specific visualizers for specific prompts and will load up the databases
 
 
 
