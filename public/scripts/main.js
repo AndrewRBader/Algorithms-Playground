@@ -25,14 +25,18 @@ $('#visualizer-button').click(() => {
 
 
     return function() {
+
+        if (visualizerClickCheck === true) return;
+        visualizerClickCheck = true;
+
         $visualizerTitle.css(visTitleStyle)
         $visualizerCanvas.css(visCanvasStyle)
 
         return function() {
+            
             var c = document.getElementById('myCanvas');
             var ctx = c.getContext("2d");
-            if (visualizerClickCheck === true) return;
-            visualizerClickCheck = true;
+            
             return algoCanvasFunction(c, ctx);
         }();
     }();
@@ -41,7 +45,7 @@ $('#visualizer-button').click(() => {
 $('#reset-button').click(() => {
     $visualizerTitle.remove();
     $visualizerCanvas.remove();
-    return visualizerClickCheck = true;
+    return visualizerClickCheck = false;
 })
 
 // solution button functionality

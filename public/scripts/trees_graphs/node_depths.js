@@ -1,7 +1,7 @@
 // script for node depths graphs and trees algorithm
 
 function algoCanvasFunction(c, ctx){
-    ctx.moveTo(0, 0);
-    ctx.lineTo(200, 50);
-    ctx.stroke();
+    tree_image = new Image();
+    tree_image.src = 'https://static.javatpoint.com/ds/images/binary-tree.png';
+    ctx.drawImage(tree_image, 10, 20, 100, 100);
 }
