@@ -34,16 +34,16 @@ User flow/wire frames:
 
 The user will be brought to an algorithms-playground page with algorithm topics to select from such as the list above:
 
-![alt home-page](./WireFrames/HomePage.png)
+![alt home-page]('./WireFrames/HomePage.png')
 
 The user can then select one of the algorithm categories and will be directed to an index page of prompts for that type of topic
 - this will be similar to my project 3 for each topic type
 
-![alt algo-topic-index](./WireFrames/AlgoTopicIndex.png)
+![alt algo-topic-index]('./WireFrames/AlgoTopicIndex.png')
 
 The user will be brought to an algo-prompt show page with a cool visualer at the left and the JS code to the right. It will be a fun way to learn algos!!
 
-![alt algo-show-page](./WireFrames/AlgoShowPage.png)
+![alt algo-show-page]('./WireFrames/AlgoShowPage.png')
 
 
 Will try some user auth as well!
