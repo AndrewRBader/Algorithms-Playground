@@ -40,7 +40,13 @@
             </div>
         </section>
         <section class = "work-space">
-            <span class = "visualizer-span"> Visualizer Space file: "/scripts/<%=stacksQueuesAlgorithm.dir_grabber%>/<%=stacksQueuesAlgorithm.file_grabber%>.js" </span>
+            <span class = "visualizer-span">
+                <div class = "visualizer-title">Algorithm Visualizer</div>
+                <div class = "button-container">
+                    <button id = 'visualizer-button'>Start Visualizer</button>
+                    <button id = 'reset-button'>Reset Visualizer</button>
+                </div>
+            </span>
             <span class = "code-block-span">
                 <% for (let i = 0; i < stacksQueuesAlgorithm.solution.length; i++){ %>
                     <div class = "scriptLines"> 

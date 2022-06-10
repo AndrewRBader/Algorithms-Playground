@@ -1,5 +1,10 @@
-console.log('we have javascript!')
+const $visualizerDiv = $('<div>Algorithm Visualizer Activated</div>')
 
-const $visualizerElement = $('visualizer-span')
 
-console.log($visualizerElement)
+$('#visualizer-button').click(() => {
+    $visualizerDiv.appendTo('.visualizer-span')
+})
+
+$('#reset-button').click(() => {
+    $visualizerDiv.remove();
+})
