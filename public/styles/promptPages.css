@@ -19,11 +19,11 @@ body {
 }
 
 .other-algorithms {
-    background-color: rgb(255, 47, 206);
+    background-color: rgb(154, 83, 221);
 }
 
 .recursion {
-    background-color: rgb(47, 255, 47);
+    background-color: rgb(255, 144, 47);
 }
 
 .stacks-queues {
@@ -31,7 +31,7 @@ body {
 }
 
 .trees-graphs {
-    background-color: rgb(154, 83, 221);
+    background-color: rgb(255, 47, 206);
 }
 
 .header{
@@ -132,9 +132,21 @@ button {
     background-color:black;
     font-family: 'Source Code Pro', monospace;
     font-size: 18px;
-    color: green;
+    color: black;
     border-color: grey;
     max-height: 100%;
     overflow-wrap: break-word;
     overflow:scroll;
+}
+
+.solution-buttons{
+    display:flex;
+    justify-content: center;
+    background-color: grey;
+    border-style: solid;
+    border-color: black;
+}
+
+#show-solution-button {
+    width: 50%;
 }

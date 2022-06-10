@@ -21,6 +21,9 @@
         crossorigin="anonymous">
     </script>
 
+    <!-- linking to main.js for general button functionality -->
+    <script src = "/scripts/main.js" defer></script>
+
     <!-- linking to corresponding script page paired with db schema instance-->
     <script src = "/scripts/<%=treesGraphsAlgorithm.dir_grabber%>/<%=treesGraphsAlgorithm.file_grabber%>.js" defer></script>
 
@@ -49,6 +52,10 @@
                 </div>
             </span>
             <span class = "code-block-span">
+                <div class = 'solution-buttons'>
+                    <button id = "show-solution-button">Show Solution</button>
+                    <button id = "hide-solution-button">Hide Solution</button>
+                </div>
                 <% for (let i = 0; i < treesGraphsAlgorithm.solution.length; i++){ %>
                     <div class = "scriptLines"> 
                         <%= treesGraphsAlgorithm.solution[i] %>

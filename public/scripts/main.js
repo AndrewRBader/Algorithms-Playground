@@ -38,11 +38,33 @@ $('#reset-button').click(() => {
     $visualizerCanvas.remove();
 })
 
-// algorithm visualizer canvas script
+// solution button functionality
 
-function algoCanvasFunction(c, ctx){
-    ctx.moveTo(0, 0);
-    ctx.lineTo(200, 50);
-    ctx.stroke();
+const $scriptLines = $('.scriptLines')
+var scriptLines = document.querySelectorAll('.scriptLines')
+
+
+
+$('#show-solution-button').click(() => {
+    replaceDash(scriptLines)
+    return function (){
+        $scriptLines.css("color","green")
+    }()
+})
+
+$('#hide-solution-button').click(() => {
+    return function (){
+        $scriptLines.css("color","black")
+    }()
+})
+
+function replaceDash(scriptLines){
+    for (let i = 0; i < scriptLines.length; i++){
+        let scriptLineTemp = scriptLines[i].innerHTML
+        let newStrArr = scriptLineTemp.replaceAll('-', '&nbsp')
+        let newStr = `${i})` + newStrArr
+
+        scriptLines[i].innerHTML = newStr
+        console.log(scriptLines[i])
+    }
 }
-
