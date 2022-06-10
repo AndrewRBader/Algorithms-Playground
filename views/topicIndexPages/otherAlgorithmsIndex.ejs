@@ -11,14 +11,16 @@
     <main class = "other-algorithms-index">
         <div class = "links"><a href = "/">Homepage</a></div>
         <div class = "title">Other Algorithms Index Page</div>
-        <section class = "prompts-container">
-            <div class = "prompt-container">
+        <section class = "prompts-section">
+            <div class = "prompts-container"> 
                 <% for (let i = 0; i < other_algorithms.length; i++){ %>
-                    <a class="prompt-link" href = "/other-algorithms/<%=other_algorithms[i]._id%>/">
-                        <button>
-                            <%= other_algorithms[i].title %>
-                        </button>
-                    </a>
+                    <div class = "prompt-container">
+                        <a class="prompt-link" href = "/other-algorithms/<%=other_algorithms[i]._id%>/">
+                            <button>
+                                <%= other_algorithms[i].title %>
+                            </button>
+                        </a>
+                    </div>
                 <% } %>
             </div>
         </section>

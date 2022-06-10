@@ -11,14 +11,16 @@
     <main class = "trees-graphs-index">
         <div class = "links"><a href = "/">Homepage</a></div>
         <div class = "title">Trees and Graphs Index Page</div>
-        <section class = "prompts-container">
-            <div class = "prompt-container">
+        <section class = "prompts-section">
+            <div class = "prompts-container"> 
                 <% for (let i = 0; i < trees_graphs.length; i++){ %>
-                    <a class="prompt-link" href = "/trees-graphs/<%=trees_graphs[i]._id%>/">
-                        <button>
-                            <%= trees_graphs[i].title %>
-                        </button>
-                    </a>
+                    <div class = "prompt-container">
+                        <a class="prompt-link" href = "/trees-graphs/<%=trees_graphs[i]._id%>/">
+                            <button>
+                                <%= trees_graphs[i].title %>
+                            </button>
+                        </a>
+                    </div>
                 <% } %>
             </div>
         </section>

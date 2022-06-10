@@ -11,15 +11,17 @@
     <main class = "array-strings-index main">
         <div class = "links"><a href = "/">Homepage</a></div>
         <div class = "title">Arrays and Strings Index Page</div>
-        <section class = "prompts-container">
-            <div class = "prompt-container">               
-                <% for (let i = 0; i < arrays_strings.length; i++){ %>
-                    <a class="prompt-link" href = "/arrays-strings/<%=arrays_strings[i]._id%>/">
-                        <button>
-                            <%= arrays_strings[i].title %>
-                        </button>
-                    </a>
-                <% } %>
+        <section class = "prompts-section">
+            <div class = "prompts-container">            
+                    <% for (let i = 0; i < arrays_strings.length; i++){ %>
+                        <div class = "prompt-container">
+                            <a class="prompt-link" href = "/arrays-strings/<%=arrays_strings[i]._id%>/">
+                                <button>
+                                    <%= arrays_strings[i].title %>
+                                </button>
+                            </a>
+                        </div>
+                    <% } %>
             </div>
         </section>
     </main>

@@ -11,14 +11,16 @@
     <main class = "linked-lists-index">
         <div class = "links"><a href = "/">Homepage</a></div>
         <div class = "title">Linked List Index Page</div>
-        <section class = "prompts-container">
-            <div class = "prompt-container">
+        <section class = "prompts-section">
+            <div class = "prompts-container"> 
                 <% for (let i = 0; i < linked_lists.length; i++){ %>
-                    <a class="prompt-link" href = "/linked-lists/<%=linked_lists[i]._id%>/">
-                        <button>
-                            <%= linked_lists[i].title %>
-                        </button>
-                    </a>
+                    <div class = "prompt-container">
+                        <a class="prompt-link" href = "/linked-lists/<%=linked_lists[i]._id%>/">
+                            <button>
+                                <%= linked_lists[i].title %>
+                            </button>
+                        </a>
+                    </div>
                 <% } %>
             </div>
         </section>
