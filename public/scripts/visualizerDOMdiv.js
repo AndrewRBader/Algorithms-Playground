@@ -1,4 +1,6 @@
-// script for node depths graphs and trees problem:
+// visualizer DOM boiler plate set up/test
+
+// script for duplicate check arrays and strings problem:
 
 // visualizer boiler plate script for DOM
 const $visualizerTitle = $('<div>Algorithm Visualizer Activated</div>')
@@ -43,3 +45,4 @@ function algoCanvasFunction(c, ctx){
     ctx.lineTo(200, 50);
     ctx.stroke();
 }
+

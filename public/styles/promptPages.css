@@ -103,6 +103,15 @@ body {
     height: 5%;
 }
 
+.visualizer-area {
+    height: 84%;
+    width: 99%;
+    border-style: solid;
+    border-width: medium;
+    margin: auto;
+    border-style: solid;
+}
+
 .button-container {
     display: flex;
     justify-content: center;
