@@ -1,5 +1,4 @@
-const $visualizerDiv = $('<div>Algorithm Visualizer Activated</div>')
-
+var $visualizerDiv = $('<div>Algorithm Visualizer Activated</div>')
 
 $('#visualizer-button').click(() => {
     $visualizerDiv.appendTo('.visualizer-span')
